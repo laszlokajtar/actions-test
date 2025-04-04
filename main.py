@@ -9,6 +9,8 @@ def main():
     
     response = httpx.get("https://httpbin.org/bearer", headers={"Authorization": f'Bearer {os.getenv("API_KEY")}'})
 
+    print(os.getenv("API_KEY"))
+
     print(response)
 
 if __name__ == "__main__":
