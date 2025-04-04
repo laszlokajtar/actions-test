@@ -25,4 +25,7 @@ jobs:
         run: uv run pytest tests
 
       - name: Run script
+        env: 
+          IS_TEST: ${{ vars.IS_TEST }}
+          API_KEY: ${{ secrets.API_KEY }}
         run: uv run main.py
