@@ -22,7 +22,7 @@ jobs:
         run: uv sync --all-extras --dev
       
       - name: Run Ruff formatting and linting
-      - run: uvx ruff format --diff
+        run: uvx ruff format --diff
 
       - name: Run tests
         run: uv run pytest tests
