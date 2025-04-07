@@ -7,6 +7,7 @@ load_dotenv()
 
 def main():
     print(f"This is a test: {os.getenv('IS_TEST')}")
+    print("test")
 
     response = httpx.get(
         "https://httpbin.org/bearer",
@@ -15,7 +16,7 @@ def main():
 
     print(os.getenv("API_KEY"))
 
-    {   }
+    {}
 
     print(response)
 
